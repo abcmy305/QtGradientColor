@@ -18,41 +18,42 @@ DEFINES += QT_LARGEFILE_SUPPORT QT_DLL
 
 INCLUDEPATH += ./GeneratedFiles \
 				. \
+				./include \
 				./GeneratedFiles/Debug
 
-HEADERS += ./qtgradientutils.h \
-		./qtgradientmanager.h \
-		./qtgradientwidget.h \
-		./qtgradientstopswidget.h \
-		./qtcolorline.h \
-		./qtcolorbutton.h \
-		./qtgradientstopsmodel.h \
-		./qtgradientstopscontroller.h \
-		./qtgradienteditor.h \
-		./gradientcolor.h \
-		./qtgradientdialog.h \
-		./qtgradientview.h \
-		./qtgradientviewdialog.h
+HEADERS += ./include/qtgradientutils.h \
+		./include/qtgradientmanager.h \
+		./include/qtgradientwidget.h \
+		./include/qtgradientstopswidget.h \
+		./include/qtcolorline.h \
+		./include/qtcolorbutton.h \
+		./include/qtgradientstopsmodel.h \
+		./include/qtgradientstopscontroller.h \
+		./include/qtgradienteditor.h \
+		./include/gradientcolor.h \
+		./include/qtgradientdialog.h \
+		./include/qtgradientview.h \
+		./include/qtgradientviewdialog.h
 		
-SOURCES += ./gradientcolor.cpp \
-		./main.cpp \
-		./qtcolorbutton.cpp \
-		./qtcolorline.cpp \
-		./qtgradientdialog.cpp \
-		./qtgradienteditor.cpp \
-		./qtgradientmanager.cpp \
-		./qtgradientstopscontroller.cpp \
-		./qtgradientstopsmodel.cpp \
-		./qtgradientstopswidget.cpp \
-		./qtgradientutils.cpp \
-		./qtgradientview.cpp \
-		./qtgradientviewdialog.cpp \
-		./qtgradientwidget.cpp
+SOURCES += ./src/gradientcolor.cpp \
+		./src/main.cpp \
+		./src/qtcolorbutton.cpp \
+		./src/qtcolorline.cpp \
+		./src/qtgradientdialog.cpp \
+		./src/qtgradienteditor.cpp \
+		./src/qtgradientmanager.cpp \
+		./src/qtgradientstopscontroller.cpp \
+		./src/qtgradientstopsmodel.cpp \
+		./src/qtgradientstopswidget.cpp \
+		./src/qtgradientutils.cpp \
+		./src/qtgradientview.cpp \
+		./src/qtgradientviewdialog.cpp \
+		./src/qtgradientwidget.cpp
 		
-FORMS += ./qtgradientviewdialog.ui \
-		./qtgradientview.ui \
-		./qtgradientdialog.ui \
-		./qtgradienteditor.ui \
-		./gradientcolor.ui
+FORMS += ./ui/qtgradientviewdialog.ui \
+		./ui/qtgradientview.ui \
+		./ui/qtgradientdialog.ui \
+		./ui/qtgradienteditor.ui \
+		./ui/gradientcolor.ui
 		
 RESOURCES += qtgradientmanager.qrc
